@@ -1,0 +1,17 @@
+body
+{
+    background-color:"#edf7ff";
+    background-image: url("img/background.png");
+    background-size: cover;
+}
+h1{
+    color:navy;
+}
+
+h2{
+    color: midnightblue;
+}
+
+h3{
+    color:mediumblue;
+}
