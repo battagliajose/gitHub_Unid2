@@ -19,10 +19,6 @@ h3{
     color:mediumblue;
 }
 
-p{
-    font: 14pt/16pt Copperplate;
-}
-
 #nombreTD{
     padding-right: 30px;
     text-align: left;
@@ -36,7 +32,7 @@ p{
 
 #contactoTD:hover{
     transition: .5s ease;
-    font-size: large;
+    font-size: larger;
 }
 
 .fotoPerfil {
@@ -57,12 +53,11 @@ p{
     filter: brightness(130%);
 }
 
-/* The overlay effect - lays on top of the container and over the image */
 .overlay {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
@@ -72,7 +67,6 @@ p{
     text-align: center;
 }
 
-  /* When you mouse over the container, fade in the overlay title */
 .fotoPerfil:hover .overlay {
     opacity: 1;
 }
