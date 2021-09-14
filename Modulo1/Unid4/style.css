@@ -3,6 +3,8 @@ body
     background-color:"#edf7ff";
     background-image: linear-gradient(rgba(120, 122, 247, 0.5), rgba(255, 255, 255,0.5)), url("img/background.png");
     background-size: cover;
+    padding: 1% 5% 1% 5%;
+    font: 14pt/16pt Copperplate;
 }
 
 h1{
@@ -18,20 +20,13 @@ h3{
 }
 
 p{
-    
-    font-weight: 700;
-    
-}
-
-table{
-    padding: 1%;
+    font: 14pt/16pt Copperplate;
 }
 
 #nombreTD{
     padding-right: 30px;
     text-align: left;
     width: 100%;
-    font: 16pt/18pt Garamond;
 }
 
 #contactoTD{
