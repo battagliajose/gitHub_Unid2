@@ -19,11 +19,6 @@ h3{
     color:mediumblue;
 }
 
-.nombre {
- 
-    
-}
-
 .contacto {
     transition: .5s ease;
     position:absolute;
@@ -34,49 +29,35 @@ h3{
 
 .contacto:hover{
     transition: .5s ease;
-    font-size:3rem;
+    font-size:2.2rem;
 }
 
-.fotoPerfil {
+.containerFotoPerfil {
     transition: transform .5s ease;
     display: inline-block;
-
+    position: relative;
     overflow: hidden;
-    width: 21%;
+    width: 20%;
 }
 
-.fotoPerfil img{
+.containerFotoPerfil img{
     transition: transform .5s ease;
     width: 100%;
 }
 
-.banner{
-    transition: transform .5s ease;
-    display: inline-block;
-    position: absolute;
-    width:74%;
-}
-
-
-.fotoPerfil:hover img{
+.containerFotoPerfil:hover img {
     transform: scale(1.1,1.1) rotate(2deg);
     filter: brightness(130%);
 }
 
-.overlay {
+.containerBanner{
+    transition: transform .5s ease;
+    display: inline-block;
     position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    text-align: center;
+    width:70%;
 }
 
-.fotoPerfil:hover .overlay {
-    opacity: 1;
+.containerBanner img{
+    width: 100%;
 }
+
