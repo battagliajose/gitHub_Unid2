@@ -19,34 +19,44 @@ h3{
     color:mediumblue;
 }
 
-#nombreTD{
-    padding-right: 30px;
-    text-align: left;
-    width: 100%;
+.nombre {
+ 
+    
 }
 
-#contactoTD{
-    text-align: right;
-    width: 100%;
-}
-
-#contactoTD:hover{
+.contacto {
     transition: .5s ease;
-    font-size: larger;
+    position:absolute;
+    right:100px;
+    top: 75px;
+    font-size:xx-large;
+}
+
+.contacto:hover{
+    transition: .5s ease;
+    font-size:3rem;
 }
 
 .fotoPerfil {
-    position: relative;
-    height: 98%;
+    transition: transform .5s ease;
+    display: inline-block;
+
     overflow: hidden;
+    width: 21%;
 }
 
 .fotoPerfil img{
     transition: transform .5s ease;
-    display: block;
     width: 100%;
-    height: auto;
 }
+
+.banner{
+    transition: transform .5s ease;
+    display: inline-block;
+    position: absolute;
+    width:74%;
+}
+
 
 .fotoPerfil:hover img{
     transform: scale(1.1,1.1) rotate(2deg);
