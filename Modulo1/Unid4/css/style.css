@@ -25,6 +25,7 @@ h3{
     right:100px;
     top: 75px;
     font-size:xx-large;
+    cursor: pointer;
 }
 
 .contacto:hover{
