@@ -1,3 +1,10 @@
+/*
+font-family: 'Lora', serif;
+font-family: 'Gideon Roman', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
 body
 {
     background-color:"#edf7ff";
@@ -9,14 +16,44 @@ body
 
 h1{
     color:navy;
+    font-family: 'Lora', serif;
 }
 
 h2{
     color: midnightblue;
+    font-family: 'Roboto', sans-serif; 
 }
 
 h3{
     color:mediumblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Gideon Roman', cursive;
+}
+
+ul {
+    font-family: 'Lora', serif;
+}
+
+.nombre {
+    background: linear-gradient(blue, lightblue);
+    background: linear-gradient(to bottom, #0f00ea 6%,#380d6d 50%,#3e186d 70%,#2945aa 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.nombre h1 {
+    padding-top: 15px;
+    padding-left: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+}
+
+.nombre h2 {
+    font-family: 'Gideon Roman', cursive;
+    padding-bottom: 5px;
 }
 
 .contacto {
@@ -24,8 +61,9 @@ h3{
     position:absolute;
     right:100px;
     top: 75px;
-    font-size:xx-large;
+    font-size:x-large;
     cursor: pointer;
+    font-family: 'Gideon Roman', cursive;
 }
 
 .contacto:hover{
@@ -62,10 +100,13 @@ h3{
     width: 100%;
 }
 
+.estrellas {
+    padding-bottom: 10px;
+}
 .containerPpal {
-    box-shadow: 0 0 20px #000;
+    /* box-shadow: 0 0 20px #000;
     padding: 0;
     margin: 0;
-    border: 5px solid black;
+    border: 5px solid black; */
 }
 
