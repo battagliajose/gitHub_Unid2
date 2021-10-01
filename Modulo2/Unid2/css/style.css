@@ -1,0 +1,109 @@
+/*
+font-family: 'Lora', serif;
+font-family: 'Gideon Roman', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+body
+{
+    background-color:"#edf7ff";
+    background-image: linear-gradient(rgba(120, 122, 247, 0.5), rgba(255, 255, 255,0.5)), url("../img/background.png");
+    background-size: cover;
+    padding: 1% 5% 1% 5%;
+    font: 14pt/16pt Copperplate;
+}
+
+h1{
+    color:navy;
+    font-family: 'Lora', serif;
+}
+
+h2{
+    color: midnightblue;
+    font-family: 'Roboto', sans-serif; 
+}
+
+h3{
+    color:mediumblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Gideon Roman', cursive;
+}
+
+ul {
+    font-family: 'Lora', serif;
+}
+
+.nombre {
+    background: linear-gradient(blue, lightblue);
+    background: linear-gradient(to bottom, #0f00ea 6%,#380d6d 50%,#3e186d 70%,#2945aa 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.nombre h1 {
+    padding-top: 15px;
+    padding-left: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+}
+
+.nombre h2 {
+    font-family: 'Gideon Roman', cursive;
+    padding-bottom: 5px;
+}
+
+.contacto {
+    transition: .5s ease;
+    position:absolute;
+    right:100px;
+    top: 75px;
+    font-size:x-large;
+    cursor: pointer;
+    font-family: 'Gideon Roman', cursive;
+}
+
+.contacto:hover{
+    transition: .5s ease;
+    font-size:2.2rem;
+}
+
+.containerFotoPerfil {
+    transition: transform .5s ease;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 20%;
+    border-radius: 10px 0 0 10px;
+}
+
+.containerFotoPerfil img{
+    transition: transform .5s ease;
+    width: 100%;
+    
+}
+
+.containerFotoPerfil:hover img {
+    transform: scale(1.1,1.1) rotate(2deg);
+    filter: brightness(130%);
+}
+
+.containerBanner{
+    display: inline-block;
+    position: absolute;
+    width:70%;
+}
+
+.containerBanner img{
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.estrellas {
+    padding-bottom: 10px;
+    color:blue;
+    font-size: 1rem;
+}
