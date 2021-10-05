@@ -1,5 +1,13 @@
 body{
-    background-color: burlywood;
+    background-color: #909efa;
     font: 14pt/16pt Copperplate;
     text-align: center;
+}
+
+h1 {
+    color: #140f07;
+}
+
+h2 {
+    color: #1e2743;
 }
