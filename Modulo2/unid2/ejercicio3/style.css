@@ -1,0 +1,30 @@
+div {
+    display: flex;
+}
+
+.contenedor {
+    margin: 0 auto;
+    flex-direction: row;
+    border: 2px solid black;
+    justify-content: space-between;
+}
+
+.item {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+.uno {
+    background-color: red;
+}
+
+.dos {
+    background-color: blue;
+}
+
+.tres {
+    background-color: green;
+}
