@@ -144,7 +144,6 @@ p {
         display: none;
 }
     .containerBanner img{
-        /*display: none;*/
         width: 100%;
         height: 68%;
         object-fit: cover;
