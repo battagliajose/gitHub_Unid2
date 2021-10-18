@@ -1,0 +1,87 @@
+.carrusel
+{
+    width: 35%;
+    margin: 50px auto;
+}
+
+body { 
+    margin: 0 auto;
+    text-align: center;
+    font-size: 100%;
+    background-color: #d9854b;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,81,121,1) 16%, rgba(0,212,255,1) 100%);
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.ejemplos {
+    color:white
+}
+
+h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.contenedor-accordion
+{
+    margin: 100px 0;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    display: inline-block;
+    width: 70%;
+}
+
+.acordion {
+    font-size: 2rem;
+}
+
+.botones {
+    position:absolute;
+    color: white;
+    left: 10px;
+    top: 10px;
+}
+
+.container-dropdown {
+    position:absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.puntoPulsando1 {
+    position:absolute;
+    left: 300px;
+    top: 50px;
+}
+
+.puntoPulsando2 {
+    position:absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.carruselImg {
+    width: 70%;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+}
+
+.tarjetas {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+}
+
+.contenedor-tarjetas {
+    width: 80%;
+    box-shadow: 0 0 5px black;
+    border: 2px solid black;
+    margin: 0 auto;
+}
