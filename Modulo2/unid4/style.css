@@ -85,3 +85,66 @@ h2 {
     border: 2px solid black;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 1500px) {
+    .contenedor-accordion
+    {
+        margin: 200px 0;
+    }
+
+    .botones {
+        position:absolute;
+        color: white;
+        left: 10px;
+        top: 150px;
+    }
+    
+    .container-dropdown {
+        position:absolute;
+        right: 10px;
+        top: 150px;
+    }
+    
+    .puntoPulsando1 {
+        position:absolute;
+        left: 300px;
+        top: 150px;
+    }
+    
+    .puntoPulsando2 {
+        position:absolute;
+        right: 300px;
+        top: 150px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .contenedor-accordion
+    {
+        margin: 50px 0;
+    }
+
+    .botones {
+        position: static;
+    }
+    
+    .container-dropdown {
+        position: static;
+    }
+    
+    .puntoPulsando1 {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .puntoPulsando2 {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+}
