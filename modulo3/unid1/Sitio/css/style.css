@@ -21,6 +21,11 @@ font-family: 'Zen Kurenaido', sans-serif; */
     float: right;
 }
 
+.flexCenter {
+    display: flex;
+    align-items: center;
+}
+
 body {
     font-family: 'Podkova', serif;;
     font-size: 16px;
@@ -35,8 +40,12 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+}
+
+.headerDiv {
     display: flex;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 header h1 {
@@ -45,7 +54,6 @@ header h1 {
     font-size: 3rem;
     display: inline-block;
     position: relative;
-
     padding-left: 50px; 
 }
 
@@ -92,7 +100,7 @@ main {
 }
 
 .footer {
-    height:128px; 
+    height:10%; 
     width: 100%; 
     background-color: var(--color2);
     position: fixed;
@@ -101,9 +109,12 @@ main {
 }   
 
 .footer_contenido {
-    height:24px; 
     width: 1000px; 
-    margin: 48px auto;
+    text-align: center;
+}
+
+main {
+    /* height: 550%; */
 }
 
 /*inicio home*/
