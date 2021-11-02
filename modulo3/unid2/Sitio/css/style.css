@@ -7,6 +7,7 @@ font-family: 'Zen Kurenaido', sans-serif; */
     --color3: #4B5267;
     --color4: #FF5200;
     --color5: #EFBCD5;
+    --color6: #E38CB6;
 }
 
 .holder {
@@ -195,6 +196,50 @@ main {
     width: 70%;
     margin: 50px;
 }
+
+/* Fin Nosotros */
+
+/* Inicio Contacto */
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0 0 10px black;
+    background-color: var(--color6);
+    border-radius: 1rem;
+}
+
+.formContainer form {
+    padding: 15px 45px 15px 0;
+}
+
+.formContainer button {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.formContainer label {
+    display: inline-block;
+    text-align: right;
+    width: 100px;
+    color: var(--color1);
+    
+}
+
+.formContainer input {
+    width: 300px; 
+}
+
+.formContainer textarea {
+    width: 300px;
+    overflow: scroll;
+    resize: none;
+}
+
+/* Fin Contacto */
 
 
 

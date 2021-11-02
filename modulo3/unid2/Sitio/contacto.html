@@ -12,6 +12,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Podkova&family=Zen+Kurenaido&display=swap" rel="stylesheet"> 
 
+        <script src="js\contacto.js"></script>
+
         <title>Las Moras</title>
     </head>
 
@@ -38,7 +40,23 @@ s
     </nav>
 
     <main>
-        <h1 style="text-align: center;">EN CONSTRUCCION</h1>
+        <div class="formContainer">
+            <form onsubmit="return false">
+                <label for="">Nombre:</label>
+                <input type="text" placeholder="Ingrese su nombre...." id="nombre"/>
+                <br><br>
+                <label for="">Mail:</label>
+                <input type="email" placeholder="Ingrese su mail..." id="mail"/>
+                <br><br>
+                <label for="">Telefono:</label>
+                <input type="text" placeholder="Ingrese su telefono..." id="telefono"/>
+                <br><br>
+                <label for="">Mensaje:</label>
+                <textarea cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+                <br>
+                <button onclick="enviarContacto();">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer>
