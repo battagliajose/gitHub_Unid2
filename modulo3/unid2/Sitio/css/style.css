@@ -199,26 +199,46 @@ main {
 
 /* Fin Nosotros */
 
+/* Inicio Novedades */
+.novedad {
+    margin-bottom: 50px;
+}
+
+.novedad img {
+    margin: 40px;
+    box-shadow: 0 0 5px black;
+    border-radius: 1rem;
+}
+
+/* Fin Novedades */
+
 /* Inicio Contacto */
+
+.contactoTitulo {
+    text-align: center;
+}
 
 .formContainer {
     display: flex;
+    align-items: center;
     justify-content: center;
     border: 1px solid black;
-    width: fit-content;
+    width:max-content;
     margin: 0 auto;
     box-shadow: 0 0 10px black;
     background-color: var(--color6);
     border-radius: 1rem;
+    text-align: center;
 }
 
 .formContainer form {
-    padding: 15px 45px 15px 0;
+    padding: 25px 45px 25px 0;
 }
 
 .formContainer button {
-    display: inline-block;
-    margin: 0 auto;
+
+    margin-left: 40px;
+    font-size:larger;
 }
 
 .formContainer label {
@@ -234,9 +254,10 @@ main {
 }
 
 .formContainer textarea {
-    width: 300px;
+    width: 100%;
     overflow: scroll;
     resize: none;
+    margin-left: 20px;
 }
 
 /* Fin Contacto */

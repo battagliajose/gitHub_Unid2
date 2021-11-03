@@ -40,7 +40,10 @@ s
     </nav>
 
     <main>
+        <h2 class="contactoTitulo">Dejenos su mensaje o solicitud de reserva!</h2>
+        <br>
         <div class="formContainer">
+
             <form onsubmit="return false">
                 <label for="">Nombre:</label>
                 <input type="text" placeholder="Ingrese su nombre...." id="nombre"/>
@@ -50,10 +53,11 @@ s
                 <br><br>
                 <label for="">Telefono:</label>
                 <input type="text" placeholder="Ingrese su telefono..." id="telefono"/>
-                <br><br>
-                <label for="">Mensaje:</label>
-                <textarea cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
                 <br>
+                <br><label for="">Mensaje:</label><br>
+                <br>
+                <textarea cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+                <br><br>
                 <button onclick="enviarContacto();">Enviar</button>
             </form>
         </div>
