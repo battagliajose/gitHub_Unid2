@@ -199,6 +199,19 @@ main {
 
 /* Fin Nosotros */
 
+/* Inicio Departamentos */
+.departamentosContainer {
+    margin: 0 auto;
+}
+
+.departamentos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+/* Fin Departamentos */
+
 /* Inicio Novedades */
 .novedad {
     margin-bottom: 50px;
