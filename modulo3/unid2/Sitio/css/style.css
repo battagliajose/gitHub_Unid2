@@ -232,6 +232,10 @@ main {
 /* Fin Departamentos */
 
 /* Inicio Galeria */
+.h1Style {
+    font-weight: 700;
+}
+
 .carruselLeft {
     width: 30%;
     margin: 0 auto;
