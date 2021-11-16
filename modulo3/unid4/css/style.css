@@ -1,0 +1,24 @@
+.boxes {
+    display: flexbox;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.box {
+    border: 1px black solid;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: blue;
+}
+
+.three {
+    background-color: yellow;
+}
