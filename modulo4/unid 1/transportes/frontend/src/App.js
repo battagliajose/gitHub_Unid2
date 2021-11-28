@@ -3,24 +3,27 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from './components/layout/header';
-import Nav from './components/layout/nav';
-import Footer from './components/layout/footer';
+import Header from './components/layout/Header';
+import Nav from './components/layout/Nav';
+import Footer from './components/layout/Footer';
 
 import HomePage from './pages/HomePage'
 import NosotrosPage from './pages/NosotrosPage'
+import DepartamentosPage from './pages/DepartamentosPage'
+import GaleriaPage from './pages/GaleriaPage'
 import ContactoPage from './pages/ContactoPage'
 import NovedadesPage from './pages/NovedadesPage'
 
 function App() {
   return (
     <Router>
-      lassName="App">
         <Header/>
         <Nav/>
         <Routes>
           <Route path="/" exact element =  {<HomePage /> } />
           <Route path="/nosotros" exact element = { <NosotrosPage /> } />
+          <Route path="/departamentos" exact element = { <DepartamentosPage /> } />
+          <Route path="/galeria" exact element = { <GaleriaPage /> } />
           <Route path="/novedades" exact element = { <NovedadesPage /> } />
           <Route path="/contacto" exact element = { <ContactoPage /> } />
         </Routes>

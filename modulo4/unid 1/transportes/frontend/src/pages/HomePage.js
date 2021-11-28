@@ -1,6 +1,6 @@
 
 
-const Header = (props) => {
+const Home = (props) => {
     return (
         <div class="main_ind_container flexCenter holder">
             <div class="mainImg left">
@@ -16,4 +16,4 @@ const Header = (props) => {
     );
 }
 
-export default Header;
+export default Home;
