@@ -1,9 +1,9 @@
 const Contacto = (props) => {
     return (
         <div>
-            <h2 class="contactoTitulo">Dejenos su mensaje o solicitud de reserva!</h2>
+            <h2 className="contactoTitulo">Dejenos su mensaje o solicitud de reserva!</h2>
             <br/>
-            <div class="formContainer">
+            <div className="formContainer">
 
                 <form onsubmit="return false">
                     <label for="">Nombre:</label>
