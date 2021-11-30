@@ -1,3 +1,4 @@
+import Button from 'react-bootstrap/Button'
 const Galeria = (props) => {
     return (
         <div>
