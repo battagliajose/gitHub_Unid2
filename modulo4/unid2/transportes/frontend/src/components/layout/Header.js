@@ -6,7 +6,7 @@ const Header = (props) => {
         <div className="mainHeaderDiv">
             <div className="headerDiv holder">
                 <img className="homeimg" src="img/lasmoras.jpg" alt="Logo"/>
-                <h1>Alquileres Turísticos - <span className="lasMoras">Las Moras</span></h1>
+                <h1><span className="lasMoras">Las Moras</span> - Alquileres Turísticos</h1>
             </div>
         </div>
     );
