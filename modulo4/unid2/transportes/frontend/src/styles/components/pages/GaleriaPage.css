@@ -1,19 +1,18 @@
-.h1Style {
+.centerText {
+    text-align: center;
+}
+
+.h1 {
     font-weight: 700;
 }
 
-.carruselLeft {
+.carouselMain {
     width: 30%;
     margin: 0 auto;
-    position: absolute;
-    left: 100px;
-    top: 350px;
 }
 
-.carruselRight {
+.carouselItem {
     width: 30%;
     margin: 0 auto;
-    position: absolute;
-    right: 100px;
-    top: 350px;
 }
+
