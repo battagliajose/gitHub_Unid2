@@ -1,0 +1,45 @@
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Podkova', serif;
+font-family: 'Zen Kurenaido', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Podkova&family=Zen+Kurenaido&display=swap');
+
+:root {
+  --color1: #2E294E;
+  --color2: #8661C1;
+  --color3: #4B5267;
+  --color4: #FF5200;
+  --color5: #EFBCD5;
+  --color6: #E38CB6;
+}
+
+.mainDiv {
+  padding-top: 250px;
+  padding-bottom: 50px;
+  text-align: justify;
+}
+
+.holder {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: 'Podkova', serif;;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  background-color: var(--color5);
+}

@@ -1,0 +1,19 @@
+.h1Style {
+    font-weight: 700;
+}
+
+.carruselLeft {
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    left: 100px;
+    top: 350px;
+}
+
+.carruselRight {
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    right: 100px;
+    top: 350px;
+}
