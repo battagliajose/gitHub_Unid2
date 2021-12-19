@@ -1,12 +1,14 @@
-<h1>Login</h1>
+<h1>Ingreso Administrador:</h1>
 
 {{#if conocido}}
-<p>Hola {{nombre}} <a href="/salir">Cerrar Sesion</a></p>
+<h2>Hola <span class="usuario">{{nombre}}</span></h2>
+<a href="/salir">Cerrar Sesion</a>
 {{/if}}
 
 {{#unless conocido}}
-<p>Ingrese nombre de Usuario: </p>
+<h2>Ingrese nombre de Usuario: </h2>
 <form action="/ingresar" method="post">
-    <input type="text" name="nombre"> <button>Ingresar</button>
+    <input type="text" name="nombre"> <br><br>
+    <button>Ingresar</button>
 </form>
 {{/unless}}

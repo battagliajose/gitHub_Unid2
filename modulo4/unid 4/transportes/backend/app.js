@@ -5,8 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 
 var app = express();
@@ -34,19 +32,17 @@ app.get('/', function (req, res) {
   console.log(conocido);
 
   res.render('admin/login', {
-    tittle: 'Sesiones en Express.js',
     conocido: conocido,
-    nombre: req.session.nombre
+    nombre: req.session.nombre,
+    layout:'admin/layout'
   });
 });
 
 
 app.get('/salir', function (req, res) {
   req.session.destroy();
-  res.redirect('admin/login');
+  res.redirect('/');
 })
-
-app.use('/', loginRouter);
 
 app.post('/ingresar', function (req, res) {
   if(req.body.nombre) {

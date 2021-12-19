@@ -317,7 +317,13 @@ main {
 
 /* Fin Contacto */
 
+/*administrador*/
 
+.usuario {
+    color: blue;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: larger;
+}
 
 
 
