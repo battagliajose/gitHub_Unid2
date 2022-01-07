@@ -4,12 +4,13 @@ var router = express.Router();
 require('dotenv').config();
 var pool = require('../models/bd');
 
-pool.query('select * from novedades').then(function (resultados){
-  console.log(resultados)
-});
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+    pool.query('select * from novedades').then(function (resultados){
+      console.log(resultados)
+    });
     res.render('novedades', { title: 'Las Moras' });
 });
 
