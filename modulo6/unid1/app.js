@@ -53,6 +53,7 @@ app.use('/galeria', galeriaRouter);
 app.use('/novedades', secured, novedadesRouter);
 app.use('/contacto', contactoRouter);
 app.use('/admin/login', loginRouter);
+app.use('/agregar', secured, novedadesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
