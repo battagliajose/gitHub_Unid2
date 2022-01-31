@@ -37,4 +37,36 @@ router.post('/agregar', async (req, res, next) => {
   }
 });
 
+router.post('/modificar', async (req, res, next) => {
+  try {
+      let obj = {
+        titulo: req.body.titulo,
+        subtitulo: req.body.subtitulo,
+        cuerpo: req.body.cuerpo
+      }
+      await novedadesModel.modificarNovedad(obj, req.body.id);
+      res.redirect('/novedades')
+  } catch (error) {
+    console.log(error)
+    res.render('admin/modificar', {
+      error: true, message: 'No se cargó la novedad'
+    });
+  }
+});
+
+router.get('/eliminar/:id', async (req, res, next) => {
+  var id = req.params.id;
+  await novedadesModel.deleteNovedad(id);
+  res.redirect('/novedades')
+})
+
+router.get('/modificar/:id', async (req, res, next) => {
+  let id = req.params.id;
+  let novedad = await novedadesModel.getNovedad(id);
+  res.render('admin/modificar', {
+    layout: 'admin/layout',
+    novedad
+  })
+})
+
 module.exports = router;
