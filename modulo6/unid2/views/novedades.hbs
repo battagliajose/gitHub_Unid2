@@ -1,4 +1,4 @@
-<div class="container" style="margin: 50px auto">
+<div class="container" id="novedades" style="margin: 50px auto">
     <div class="row">
         <div class="col">
 
@@ -38,10 +38,20 @@
                                     <td>{{subtitulo}}</td>
                                     <td class="text-end">
                                         <a href="/novedades/modificar/{{id}}" style="margin-bottom:5px" title="Editar" class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
-                                        <a href="/novedades/eliminar/{{id}}" title="Eliminar" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
+                                        <a href="/novedades/eliminar/{{id}}" style="margin-bottom:5px" title="Eliminar" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
+                                        <a href="/novedades/getCuerpo/{{id}}" title="Cuerpo" class="btn btn-sm btn-secondary"><i class="far fa-eye"></i></a>
                                     </td>
                                 </tr>
                                 {{/each}}
+
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead class="thead-dark">
+                                <tr><th scope="col">"Cuerpo de la noticia"</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>{{cuerpo.cuerpo}}</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -50,3 +60,6 @@
         </div>
     </div>
 </div>
+
+
+

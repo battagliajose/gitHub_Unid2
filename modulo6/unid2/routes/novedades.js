@@ -69,4 +69,18 @@ router.get('/modificar/:id', async (req, res, next) => {
   })
 })
 
+router.get('/getCuerpo/:id', async (req, res, next) => {
+  let id = req.params.id;
+  let novedades = await novedadesModel.getNovedades();
+  let cuerpo = await novedadesModel.getCuerpo(id);
+
+  res.render('novedades', { 
+    title: 'Las Moras', 
+    usuario: req.session.nombre,
+    novedades,
+    cuerpo
+  });
+
+})
+
 module.exports = router;

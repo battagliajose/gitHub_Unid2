@@ -43,6 +43,17 @@ async function getNovedad(id) {
     }
 }
 
+async function getCuerpo(id) {
+    try {
+        var query = "select cuerpo from listanovedades where id = ?";
+        var rows = await pool.query(query, [id]);
+        return rows[0];
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+
 async function modificarNovedad(obj, id) {
     try {
         var query = "update listanovedades set ? where id = ?";
@@ -54,4 +65,4 @@ async function modificarNovedad(obj, id) {
     }
 }
 
-module.exports = { getNovedades, insertNovedad, deleteNovedad, getNovedad, modificarNovedad }
+module.exports = { getNovedades, insertNovedad, deleteNovedad, getNovedad, modificarNovedad, getCuerpo }
