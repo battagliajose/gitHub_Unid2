@@ -7,7 +7,8 @@ router.get('/', async function(req, res, next) {
     var novedades = await novedadesModel.getNovedades();
 
     res.render('novedades', { 
-      title: 'Las Moras', 
+      title: 'Las Moras',
+      layout: './layoutNov',
       usuario: req.session.nombre,
       novedades
     });
@@ -15,7 +16,7 @@ router.get('/', async function(req, res, next) {
 
 router.get('/agregar', (req, res, next) => {
   res.render('admin/agregar' , {
-    
+    layout: './layoutNov',
   });
 });
 
@@ -76,6 +77,7 @@ router.get('/getCuerpo/:id', async (req, res, next) => {
 
   res.render('novedades', { 
     title: 'Las Moras', 
+    layout: './layoutNov',
     usuario: req.session.nombre,
     novedades,
     cuerpo

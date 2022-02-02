@@ -22,3 +22,10 @@ a {
   font-size: larger;
 
 }
+
+.divBody {
+  position: relative;
+  width: 80%;
+  left: 300px;
+  top: -300px;
+}
