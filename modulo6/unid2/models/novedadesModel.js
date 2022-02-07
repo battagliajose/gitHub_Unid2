@@ -45,7 +45,7 @@ async function getNovedad(id) {
 
 async function getCuerpo(id) {
     try {
-        var query = "select cuerpo from listanovedades where id = ?";
+        var query = "select id, cuerpo from listanovedades where id = ?";
         var rows = await pool.query(query, [id]);
         return rows[0];
     } catch (error) {
