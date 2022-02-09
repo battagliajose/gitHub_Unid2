@@ -1,0 +1,21 @@
+
+import '../styles/components/pages/HomePage.css'
+const Home = (props) => {
+    return (
+        <div className="mainDiv">
+            <div className="main_ind_container flexCenter holder">
+                <div className="mainImg left">
+                    <img src="img/frente.jpg" alt="homeimg"/>
+                </div>
+                <div className="mainText right">
+                    <h1>Las Moras</h1>
+                    <p>Un lugar único y con ambiente hogareño para pasar tus vacaciones</p>
+                    <p>Atendido por sus dueños, desde hace más de 20 años.</p>
+                    <p>Departamentos cómodos a 2 cuadras de la playa, 3 de las termas y 10 del centro de Colón.</p>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Home;
