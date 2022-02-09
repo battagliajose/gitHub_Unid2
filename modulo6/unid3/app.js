@@ -7,7 +7,6 @@ const session = require('express-session');
 var fileUpload = require('express-fileupload');
 var cors = require('cors');
 
-
 var usersRouter = require('./routes/users');
 var novedadesRouter = require('./routes/novedades');
 var loginRouter = require ('./routes/admin/login');
