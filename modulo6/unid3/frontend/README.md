@@ -2,4 +2,4 @@
 Modulo 4 - Unid 2
 React
 
-Puede visualizar este sitio en [Heroku](https://las-moras-colon.herokuapp.com/).
+Puede visualizar este sitio en [Heroku](PENDIENTE).
