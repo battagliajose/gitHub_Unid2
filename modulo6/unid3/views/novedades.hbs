@@ -27,6 +27,7 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Título</th>
                                     <th scope="col">Subtítulo</th>
+                                    <th scope="col">Imagen</th>
                                     <th scope="col" class="text-end">Acciones</th>
                                 </tr>
                             </thead>
@@ -36,6 +37,7 @@
                                     <th scope="row"> {{id}}</th>
                                     <td>{{titulo}}</td>
                                     <td>{{subtitulo}}</td>
+                                    <td>{{{imagen}}}</td>
                                     <td class="text-end">
                                         <a href="/novedades/modificar/{{id}}" style="margin-bottom:5px" title="Editar" class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
                                         <a href="/novedades/eliminar/{{id}}" style="margin-bottom:5px" title="Eliminar" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>

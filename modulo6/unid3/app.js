@@ -5,11 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session = require('express-session');
 var fileUpload = require('express-fileupload');
+var cors = require('cors');
 
 
 var usersRouter = require('./routes/users');
 var novedadesRouter = require('./routes/novedades');
 var loginRouter = require ('./routes/admin/login');
+var apiRouter = require('./routes/api');
 
 var app = express();
 
@@ -17,16 +19,16 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use(fileUpload({
-    useTempFiles: true,
-    tempFileDir: '/tmp/'
-}));
 
 app.use(session({
   secret: 'afsdfwjoeijf293jr2hwrw23r',
@@ -50,6 +52,7 @@ app.use('/', loginRouter);
 app.use('/users', usersRouter);
 app.use('/novedades', secured, novedadesRouter);
 app.use('/admin/login', loginRouter);
+app.use('/api', cors(), apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
