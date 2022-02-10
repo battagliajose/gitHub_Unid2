@@ -1,9 +1,18 @@
+.mainDiv {
+    margin-top: 0px;
+}
+
 .novedad {
     margin-bottom: 50px;
 }
 
-.novedad img {
+.novedad_img {
     margin: 40px;
     box-shadow: 0 0 5px black;
     border-radius: 1rem;
+}
+
+.novedadesContainer {
+    /* background-color: red; */
+    min-height: 250px;
 }
