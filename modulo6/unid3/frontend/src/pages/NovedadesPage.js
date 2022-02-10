@@ -1,37 +1,35 @@
-import '../styles/components/pages/NovedadesPage.css'
-const Novedades = (props) => {
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import NovedadItem from '../components/novedades/NovedadItem';
+
+const NovedadesPage = (props) => {
+    
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+
+        cargarNovedades()
+    }, []);
+
     return (
-        <div className="novedadesContainer holder mainDiv">
-            <h1>NOVEDADES!</h1>
-            
-            <div className="novedad">
-                <img className="left" src="https://via.placeholder.com/150" alt=""/>
-                <h2>"Arrancamos la temporada verano 2021/2022!!</h2>
-                <h3>01-11-2021</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil numquam officia dolorem iste animi, praesentium excepturi repellendus, recusandae temporibus illum soluta sunt! Facere quia ab ullam fugiat, itaque alias quisquam temporibus ipsum veniam fuga nesciunt! Vitae tenetur libero iste velit debitis ad in autem, fugit vel id, magni dignissimos deserunt quibusdam mollitia laudantium. Reiciendis beatae amet nostrum, nesciunt veritatis harum aliquid eos officia tenetur suscipit aperiam fugiat vel assumenda. Quam iste provident magnam dolorum quibusdam explicabo consequuntur architecto? Reiciendis ipsum cumque harum voluptate iste, ipsam laborum cum mollitia magnam, cupiditate dolore repudiandae consequatur corrupti suscipit reprehenderit totam animi libero?</p>
-                <hr/>
-            </div>
-
-            <div className="novedad">
-                <img className="left" src="https://via.placeholder.com/150" alt=""/>
-                <h2>"Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-                <h3>05-08-2021</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil numquam officia dolorem iste animi, praesentium excepturi repellendus, recusandae temporibus illum soluta sunt! Facere quia ab ullam fugiat, itaque alias quisquam temporibus ipsum veniam fuga nesciunt! Vitae tenetur libero iste velit debitis ad in autem, fugit vel id, magni dignissimos deserunt quibusdam mollitia laudantium. Reiciendis beatae amet nostrum, nesciunt veritatis harum aliquid eos officia tenetur suscipit aperiam fugiat vel assumenda. Quam iste provident magnam dolorum quibusdam explicabo consequuntur architecto? Reiciendis ipsum cumque harum voluptate iste, ipsam laborum cum mollitia magnam, cupiditate dolore repudiandae consequatur corrupti suscipit reprehenderit totam animi libero?</p>
-                <hr/>
-            </div>
-
-            <div className="novedad">
-                <img className="left" src="https://via.placeholder.com/150" alt=""/>
-                <h3>05-08-2021</h3>
-                <h2>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, sunt!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil numquam officia dolorem iste animi, praesentium excepturi repellendus, recusandae temporibus illum soluta sunt! Facere quia ab ullam fugiat, itaque alias quisquam temporibus ipsum veniam fuga nesciunt! Vitae tenetur libero iste velit debitis ad in autem, fugit vel id, magni dignissimos deserunt quibusdam mollitia laudantium. Reiciendis beatae amet nostrum, nesciunt veritatis harum aliquid eos officia tenetur suscipit aperiam fugiat vel assumenda. Quam iste provident magnam dolorum quibusdam explicabo consequuntur architecto? Reiciendis ipsum cumque harum voluptate iste, ipsam laborum cum mollitia magnam, cupiditate dolore repudiandae consequatur corrupti suscipit reprehenderit totam animi libero?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque aliquam ex vitae veniam eveniet, eum aspernatur facere tempora in fugiat sunt perferendis facilis! Soluta, commodi nostrum quo hic beatae nemo?    
-                </p>
-
-                <hr/>
-            </div>
-        </div>
+        <section className="holder">
+            <h2>Novedades</h2>
+            {loading ? (
+                <p>Cargando...</p>
+            ) : (
+                novedades.map(item => <NovedadItem key={item.id}
+                title={item.titulo} subtitle={item.subtitulo}
+                imagen={item.imagen} body={item.cuerpo} />)    
+            )}
+        </section>
     );
 }
 
-export default Novedades;
+export default NovedadesPage;
