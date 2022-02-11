@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+var favicon = require('serve-favicon');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -17,6 +18,8 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+
+app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 app.use(fileUpload({
   useTempFiles: true,
@@ -47,6 +50,7 @@ secured = async(req, res, next) => {
   }
 }
 
+app.use("/public", express.static('public'));
 app.use('/', loginRouter);
 app.use('/users', usersRouter);
 app.use('/novedades', secured, novedadesRouter);

@@ -32,7 +32,7 @@ router.get('/', async function(req, res, next) {
     });
 
     res.render('novedades', { 
-      title: 'Las Moras',
+      title: 'Las Moras - ADMINISTRADOR',
       layout: './layoutNov',
       usuario: req.session.nombre,
       novedades
