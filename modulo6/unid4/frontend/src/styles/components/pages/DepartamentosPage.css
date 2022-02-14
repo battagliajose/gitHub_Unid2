@@ -1,0 +1,26 @@
+.tituloDepartamentos {
+    margin-bottom: 60px;
+    text-align: center;
+    
+}
+
+.departamentosContainer {
+    display: flexbox;
+    margin: 0 auto;
+    width: 50%;
+    /* border: 2px solid black; */
+}
+
+.departamentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.imgDepartamentos {
+    margin: 5px;
+    max-width: 50%;
+    min-width: 250px;
+    flex: 1 0 25%;
+}
