@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import '../styles/components/pages/ContactoPage.css'
 
-const Contacto = (props) => {
+const ContactoPage = (props) => {
 
     const initialForm = {
         nombre: '',
@@ -43,27 +43,28 @@ const Contacto = (props) => {
             <br/>
             <div className="formContainer">
 
-                <form action="/contacto" method="post" onDubmit={handleSubmit}>
+                <form action="/contacto" method="post" onSubmit={handleSubmit} >
                     <label for="">Nombre:</label>
-                    <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} placeholder="Ingrese su nombre...." id="nombre"/>
+                    <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} placeholder="Ingrese su nombre...."/>
                     <br/><br/>
                     <label for="">Mail:</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Ingrese su mail..." id="mail"/>
+                    <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Ingrese su mail..."/>
                     <br/><br/>
                     <label for="">Telefono:</label>
-                    <input type="text" name="telefono" value={formData.telefono} onChange={handleChange} placeholder="Ingrese su telefono..." id="telefono"/>
+                    <input type="text" name="telefono" value={formData.telefono} onChange={handleChange} placeholder="Ingrese su telefono..."/>
                     <br/><br/>
                     <label for="">Mensaje:</label>
                     <br/><br/>
                     <textarea cols="30" rows="10" name="mensaje" value={formData.mensaje} onChange={handleChange} placeholder="Ingrese su mensaje..."></textarea>
                     <br/><br/>
-                    <button onclick="enviarContacto();">Enviar</button>
+                    <p className='centrar'><input type="submit" value="Enviar"/></p>
+                    {sending ? <p>Enviando...</p> : null}
+                    {msg ? <p>{msg}</p> : null}
                 </form>
-                {sending ? <p>Enviando...</p> : null}
-                {msg ? <p>{msg}</p> : null}
+
             </div>
         </div>
     );
 }
 
-export default Contacto;
+export default ContactoPage;
