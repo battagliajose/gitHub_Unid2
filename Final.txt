@@ -1,0 +1,17 @@
+Buen día Flavia, aca va el TP Final:
+
+GitHub:
+https://github.com/battagliajose/diplomaturaFullStack/tree/main/modulo6/unid4
+
+La base de datos está en el repositorio.
+
+
+Heroku:
+BACK:
+https://las-moras-final.herokuapp.com 
+FRONT:
+https://las-moras-final-react.herokuapp.com/
+Usuarios Login jose y flavia, clave 1234
+
+Video Youtube:
+https://youtu.be/9U9fSXzwd-8
