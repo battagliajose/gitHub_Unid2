@@ -30,8 +30,7 @@ router.get('/novedades', async function(req, res, next) {
 });
 
 router.post('/contacto', async (req, res) => {
-  console.log('Contacto!!');
-  
+
   const mail = {
     to: 'jabattaglia@hotmail.com',
     subject: 'Contacto web',
