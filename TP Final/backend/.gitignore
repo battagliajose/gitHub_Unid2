@@ -1,0 +1,6 @@
+.env
+node_modules
+imagenes_novedades
+config.txt
+db.sql
+import mysql to heroku.bat
